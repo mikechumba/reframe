@@ -1,0 +1,128 @@
+@use "sass:map";
+
+$breakpoint-values: (
+  "xs": 0px,
+  "sm": 600px,
+  "md": 900px,
+  "lg": 1200px,
+  "xl": 1536px
+);
+
+@mixin breakpoint($size, $dir: up) {
+  @if $dir == up {
+    @media (min-width: map.get($breakpoint-values, $size)) {
+      @content;
+    }
+  } @else if $dir == down {
+    @media (max-width: map.get($breakpoint-values, $size)) {
+      @content;
+    }
+  } @else {
+    @error "Expected a a value of either 'up' or 'down', instead got #{$dir}" 
+  }
+};
+
+$spacing-md: (
+  0: 0,
+  1: 5,
+  2: 10,
+  3: 15,
+  4: 20,
+  5: 25,
+  6: 30,
+  7: 40,
+  8: 50,
+  9: 60,
+  10: 80,
+  11: 100,
+  12: 130
+);
+
+$spacing-sm: (
+    0:	0,
+    1: 5,
+    2: 10,
+    3: 15,
+    4: 20,
+    5: 25,
+    6: 30,
+    7: 40,
+    8: 50,
+    9: 60,
+    10: 60,
+    11: 75,
+    12: 75
+);
+
+
+@function spacing($size, $screen: md) {
+  @if map-has-key($spacing-md, $size) {
+      @if $screen == md {
+          @return calc(map.get($spacing-md, $size) * 0.0625 * 1rem);
+      } @else if $screen == sm {
+          @return calc(map.get($spacing-sm, $size) * 0.0625 * 1rem);
+      } @else {
+          @error "Incorrect breakpoint of #{$screen} passed. Only 'sm' and 'md' accepted."
+      }
+      
+  } @else {
+      @error "Object missing specified key: #{$size}";
+  }
+};
+
+
+@mixin flex-gap {
+  @each $i, $val in $spacing-md {
+    .fg-#{$i} {
+      gap: calc(map.get($spacing-md, $i) * 0.0625 * 1rem);
+    }
+    .fgy-#{$i} {
+      row-gap: calc(map.get($spacing-md, $i) * 0.0625 * 1rem);
+    }
+    .fgx-#{$i} {
+      column-gap: calc(map.get($spacing-md, $i) * 0.0625 * 1rem);
+    }
+    
+  }
+}
+
+$directions: (
+  "t": top,
+  "b": bottom,
+  "r": right,
+  "l": left
+);
+
+@mixin spacing-utilities {
+  $sm-root-rem: 0.0714;
+  $md-root-rem: 0.0625;
+  $root-rem: $sm-root-rem;
+  @include breakpoint('md') {
+    $root-rem: $md-root-rem;
+  }
+  @each $i, $dir in $directions {
+    @each $j, $space-val in $spacing-md {
+      $result: calc(map.get($spacing-md, $j) * $root-rem * 1rem);
+      .m#{$i}-#{$j} {
+        margin-#{$dir}: $result;
+      }
+    }
+  }
+
+  @each $j, $space-val in $spacing-md {
+    $result: calc(map.get($spacing-md, $j) * $root-rem * 1rem);
+    .m-#{$j} {
+      margin: $result;
+    }
+    .mx-#{$j} {
+      margin: $result 0;
+    }
+    .my-#{$j} {
+      margin: 0 $result;
+    }
+  }
+}
+
+@include spacing-utilities()
+
+

@@ -1,0 +1,52 @@
+@use "./tools";
+
+h1 {
+  font-size: 2.441rem;
+}
+
+h2 {
+  font-size: 1.563rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+li, p {
+  font-size: 1rem;
+  font-family: var(--work-sans), sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: var(--merriweather), serif;
+  color: var(--primary);
+  line-height: 154%;
+}
+
+p {
+  line-height: 180%;
+  color: var(--primary);
+  &.mono {
+    font-family: var(--space-mono), monospace;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  color: var(--primary);
+  li {
+    list-style: none;
+  }
+}
+
