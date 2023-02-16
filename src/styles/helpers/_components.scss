@@ -1,0 +1,65 @@
+@use "./settings";
+@use "./utilities" as *;
+@use "./tools";
+
+.banner, .main {
+  margin: spacing(3);
+}
+
+.logo {
+  width: 6rem;
+  svg {
+    width: 100%;
+  }
+}
+
+.btn {
+  padding: spacing(2) spacing(4);
+  border-radius: 4px;
+  &-primary {
+    background: var(--brand-secondary);
+    &:hover {
+      color: var(--brand-secondary);
+      background: var(--brand-primary);
+    }
+  }
+}
+
+.main-nav {
+  ul {
+    display: none;
+    &.active {
+      display: flex;
+      flex-flow: column wrap;
+      gap: spacing(2, 'sm');
+      flex-basis: 100%;
+      align-items: flex-end;
+      margin-top: spacing(2, 'sm');
+      .btn {
+        background: transparent;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.ham {
+  cursor: pointer;
+  padding: spacing(1);
+}
+
+.ham-icon {
+  width: 1rem;
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+  div {
+    background-color: var(--brand-primary);
+    width: 100%;
+    height: 2px;
+    &:nth-of-type(2), &:nth-of-type(3) {
+      width: 90%;
+      align-self: flex-end;
+    }
+  }
+}
