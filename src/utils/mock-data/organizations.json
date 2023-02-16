@@ -1,0 +1,17 @@
+{
+  "organizations": [
+    {
+      "id": "1",
+      "name": "Jarkata Bersatu Project",
+      "verified": "true",
+      "tags": ["Education", "Poverty", "Refugees"],
+      "about": "",
+      "website": "",
+      "country": "Indonesia",
+      "total_funds": "",
+      "target_amount": "",
+      "team": [{ "avatar": "", "name": "John Doe", "role": "Board Member" }],
+      "gallery": [""]
+    }
+  ]
+}
