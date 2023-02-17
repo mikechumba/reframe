@@ -6,6 +6,13 @@
   
 }
 
+%page-margins {
+  padding: spacing(1) spacing(2);
+  @include tools.breakpoint('sm') {
+    padding: spacing(2) spacing(4);
+  }
+}
+
 .logo {
   width: 6rem;
   svg {
@@ -109,3 +116,24 @@
     }
   }
 }
+
+.search-form {
+  @extend %page-margins;
+  background: var(--gray-100);
+  border-bottom: 1px solid var(--gray-200);
+  display: flex;
+  flex-flow: row wrap;
+  gap: spacing(3);
+
+  select, input {
+    border: none;
+    background: transparent;
+    font-family: var(--ff-poppins), sans-serif;
+    font-size: 1rem;
+  }
+
+  .search-field {
+    
+  }
+}
+

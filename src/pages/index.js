@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { Space_Grotesk, Poppins } from '@next/font/google'
 import NavBar from '@/layout/NavBar'
+import SearchBar from '@/layout/SearchBar'
 
 const spaceGrotesk = Space_Grotesk({
   weight: ['400', '700'],
@@ -33,6 +34,7 @@ export default function Home() {
         <NavBar />
       </header>
       <main className="main">
+        <SearchBar />
       </main>
       <footer></footer>
     </>
