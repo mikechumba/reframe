@@ -9,7 +9,7 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 const poppins = Poppins({
-  weight: ['400', '500'],
+  weight: ['300', '400'],
   subsets: ["latin"],
   variable: "--ff-poppins",
 })
