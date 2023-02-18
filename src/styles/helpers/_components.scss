@@ -11,6 +11,12 @@
   @include tools.breakpoint('sm') {
     padding: spacing(2) spacing(4);
   }
+  @include tools.breakpoint('md') {
+    padding: spacing(2) spacing(8);
+  }
+  @include tools.breakpoint('lg') {
+    padding: spacing(2) spacing(12);
+  }
 }
 
 .logo {
@@ -34,7 +40,7 @@
 }
 
 .main-nav {
-  padding: spacing(2) spacing(4);
+  @extend %page-margins;
   border-bottom: 1px solid var(--gray-200);
   ul {
     display: none;
@@ -129,11 +135,84 @@
     border: none;
     background: transparent;
     font-family: var(--ff-poppins), sans-serif;
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
 
   .search-field {
-    
+
   }
 }
 
+.organization-list {
+  @extend %page-margins;
+  display: grid;
+  grid-template-columns: 1fr;
+  @include tools.breakpoint('sm') {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  border: 1px solid var(--gray-200);
+  border-radius: 4px;
+  &-image {
+    padding: spacing(2);
+    img {
+      width: 100%;
+      border-radius: 4px;
+      object-fit: contain;
+    }
+  }
+  .region {
+    text-transform: uppercase;
+    color: var(--gray-700);
+    letter-spacing: 2px;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-family: var(--ff-space-grotesk);
+  }
+}
+
+.card-content {
+  display: grid;
+  padding: 0 spacing(2);
+  .amount-raised {
+    span {
+      font-size: var(--fz-md);
+      font-weight: 500;
+    }
+  }
+  .progress-bar {
+    progress {
+      inline-size: 100%;
+      -webkit-appearance: none;
+      max-height: 6px;
+      border: 0;
+      block-size: 6px;
+      &::-webkit-progress-bar {
+        background-color: var(--gray-200);
+        border-radius: 4px;
+      }
+      &::-webkit-progress-value {
+        background-color: var(--brand-secondary);
+        border-radius: 4px;
+      }
+      &::-moz-progress-bar {
+        background: var(--brand-secondary);
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+
+.tags {
+  .tag-item {
+    background: #D3FBD8;
+    padding: 0.25em 0.5em;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+}
