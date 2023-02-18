@@ -1,4 +1,6 @@
-const Card = () => {
+import { formatAmount } from "@/utils";
+
+const Card = ({ org }) => {
   return (
     <div className="card">
       <div className="card-image">
@@ -8,20 +10,20 @@ const Card = () => {
         />
       </div>
       <div className="card-content">
-        <p className="region">Indonesia</p>
-        <h2 className="mt-1">Jarkata Bersatu Project</h2>
+        <p className="region">{org.country}</p>
+        <h2 className="mt-1">{org.name}</h2>
         <ul className="tags flex flex-row fg-2 mt-1">
-          <li className="tag-item">Refugees</li>
-          <li className="tag-item">Education</li>
-          <li className="tag-item">Poverty</li>
+          {org.tags.map((tag, tagId) => (
+            <li className="tag-item" key={`tag-${tagId+1}`}>{tag}</li>
+          ))}
         </ul>
         <p className="amount-raised mt-2">
-          <span>$0.00</span>{' '}
+          <span>{formatAmount(org.total_funds)}</span>{' '}
           Raised
         </p>
         <div className="progress-bar">
           <label className="visually-hidden" htmlFor="fundraising-progress">Fundraising Progress</label>
-          <progress className="progress" id="fundraising-progress" max="100" value="40"></progress>
+          <progress className="progress" id="fundraising-progress" max={org.target_amount} value={org.total_funds}></progress>
         </div>
       </div>
     </div>

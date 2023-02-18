@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import { Space_Grotesk, Poppins } from '@next/font/google'
 import NavBar from '@/layout/NavBar'
-import SearchBar from '@/layout/SearchBar'
-import Card from '@/layout/components/Card'
 import { getOrganizations } from '@/utils/dataService'
+import OrganizationList from '@/layout/OrganizationList'
 
 const spaceGrotesk = Space_Grotesk({
   weight: ['400', '700'],
@@ -39,14 +38,7 @@ export default function Home({ organizations }) {
         <h1 className="visually-hidden">Reframe</h1>
       </header>
       <main className="main">
-        <section aria-label="Organization List">
-          <SearchBar />
-          <ol className="mt-4 organization-list">
-            <li>
-              <Card />
-            </li>
-          </ol>
-        </section>
+        <OrganizationList organizations={organizations} />
       </main>
       <footer></footer>
     </>
@@ -56,5 +48,5 @@ export default function Home({ organizations }) {
 export async function getStaticProps() {
   const res = await getOrganizations();
 
-  return { props: { organizations: res } }
+  return { props: { organizations: res.organizations } }
 }
