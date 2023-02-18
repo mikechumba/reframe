@@ -3,6 +3,7 @@ import { Space_Grotesk, Poppins } from '@next/font/google'
 import NavBar from '@/layout/NavBar'
 import SearchBar from '@/layout/SearchBar'
 import Card from '@/layout/components/Card'
+import { getOrganizations } from '@/utils/dataService'
 
 const spaceGrotesk = Space_Grotesk({
   weight: ['400', '700'],
@@ -16,7 +17,9 @@ const poppins = Poppins({
   variable: "--ff-poppins",
 })
 
-export default function Home() {
+export default function Home({ organizations }) {
+
+  console.log('::', organizations);
   return (
     <>
       <Head>
@@ -48,4 +51,10 @@ export default function Home() {
       <footer></footer>
     </>
   )
+}
+
+export async function getStaticProps() {
+  const res = await getOrganizations();
+
+  return { props: { organizations: res } }
 }
