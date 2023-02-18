@@ -15,7 +15,7 @@ const Card = () => {
           <li className="tag-item">Education</li>
           <li className="tag-item">Poverty</li>
         </ul>
-        <p className="amount-raised mt-1">
+        <p className="amount-raised mt-2">
           <span>$0.00</span>{' '}
           Raised
         </p>
