@@ -5,13 +5,84 @@
       "name": "Jarkata Bersatu Project",
       "verified": "true",
       "tags": ["Education", "Poverty", "Refugees"],
-      "about": "",
+      "about": "Jakarta Bersatu Project is a refugee led initiative to empowering refugee communities through livelihood opportunities to assist them to be able to cover their basic living needs and to live with dignity in Indonesia. At Jakarta Bersatu Project, we provide six months of both online and physical handicraft training and Indonesian language classes to refugees living in Jakarta and surrounding areas. Our activities include jewelry making training, sewing and upcycling clothes training, basic Indonesian language classes, and facilitating the marketing of refugees’ products through online markets.",
       "website": "",
       "country": "Indonesia",
-      "total_funds": "",
-      "target_amount": "",
+      "total_funds": "0",
+      "target_amount": "7641",
       "team": [{ "avatar": "", "name": "John Doe", "role": "Board Member" }],
-      "gallery": [""]
+      "gallery": [""],
+      "partner": {
+        "current": ["Same Skies", ""],
+        "previous": ["Individuals"],
+        "network_affiliations": ["UPH University", "Jesuit Refugee Service (JRS)" , "Same Skies", "Beyond The Fabric"]
+      },
+      "operating_locations": [],
+      "annual_beneficiary_reach": "82",
+      "beneficiaries": "Jakarta Bersatu Project is a refugee led initiative and running by group of refugee for refugees, so all the beneficiaries are from refugee communities with different backgrounds, cultures and countries"
+    },
+    {
+      "id": "1",
+      "name": "Jarkata Bersatu Project",
+      "verified": "true",
+      "tags": ["Education", "Poverty", "Refugees"],
+      "about": "Jakarta Bersatu Project is a refugee led initiative to empowering refugee communities through livelihood opportunities to assist them to be able to cover their basic living needs and to live with dignity in Indonesia. At Jakarta Bersatu Project, we provide six months of both online and physical handicraft training and Indonesian language classes to refugees living in Jakarta and surrounding areas. Our activities include jewelry making training, sewing and upcycling clothes training, basic Indonesian language classes, and facilitating the marketing of refugees’ products through online markets.",
+      "website": "",
+      "country": "Indonesia",
+      "total_funds": "0",
+      "target_amount": "7641",
+      "team": [{ "avatar": "", "name": "John Doe", "role": "Board Member" }],
+      "gallery": [""],
+      "partner": {
+        "current": ["Same Skies", ""],
+        "previous": ["Individuals"],
+        "network_affiliations": ["UPH University", "Jesuit Refugee Service (JRS)" , "Same Skies", "Beyond The Fabric"]
+      },
+      "operating_locations": [],
+      "annual_beneficiary_reach": "82",
+      "beneficiaries": "Jakarta Bersatu Project is a refugee led initiative and running by group of refugee for refugees, so all the beneficiaries are from refugee communities with different backgrounds, cultures and countries"
+    },
+    {
+      "id": "1",
+      "name": "Jarkata Bersatu Project",
+      "verified": "true",
+      "tags": ["Education", "Poverty", "Refugees"],
+      "about": "Jakarta Bersatu Project is a refugee led initiative to empowering refugee communities through livelihood opportunities to assist them to be able to cover their basic living needs and to live with dignity in Indonesia. At Jakarta Bersatu Project, we provide six months of both online and physical handicraft training and Indonesian language classes to refugees living in Jakarta and surrounding areas. Our activities include jewelry making training, sewing and upcycling clothes training, basic Indonesian language classes, and facilitating the marketing of refugees’ products through online markets.",
+      "website": "",
+      "country": "Indonesia",
+      "total_funds": "0",
+      "target_amount": "7641",
+      "team": [{ "avatar": "", "name": "John Doe", "role": "Board Member" }],
+      "gallery": [""],
+      "partner": {
+        "current": ["Same Skies", ""],
+        "previous": ["Individuals"],
+        "network_affiliations": ["UPH University", "Jesuit Refugee Service (JRS)" , "Same Skies", "Beyond The Fabric"]
+      },
+      "operating_locations": [],
+      "annual_beneficiary_reach": "82",
+      "beneficiaries": "Jakarta Bersatu Project is a refugee led initiative and running by group of refugee for refugees, so all the beneficiaries are from refugee communities with different backgrounds, cultures and countries"
+    },
+    {
+      "id": "1",
+      "name": "Jarkata Bersatu Project",
+      "verified": "true",
+      "tags": ["Education", "Poverty", "Refugees"],
+      "about": "Jakarta Bersatu Project is a refugee led initiative to empowering refugee communities through livelihood opportunities to assist them to be able to cover their basic living needs and to live with dignity in Indonesia. At Jakarta Bersatu Project, we provide six months of both online and physical handicraft training and Indonesian language classes to refugees living in Jakarta and surrounding areas. Our activities include jewelry making training, sewing and upcycling clothes training, basic Indonesian language classes, and facilitating the marketing of refugees’ products through online markets.",
+      "website": "",
+      "country": "Indonesia",
+      "total_funds": "0",
+      "target_amount": "7641",
+      "team": [{ "avatar": "", "name": "John Doe", "role": "Board Member" }],
+      "gallery": [""],
+      "partner": {
+        "current": ["Same Skies", ""],
+        "previous": ["Individuals"],
+        "network_affiliations": ["UPH University", "Jesuit Refugee Service (JRS)" , "Same Skies", "Beyond The Fabric"]
+      },
+      "operating_locations": [],
+      "annual_beneficiary_reach": "82",
+      "beneficiaries": "Jakarta Bersatu Project is a refugee led initiative and running by group of refugee for refugees, so all the beneficiaries are from refugee communities with different backgrounds, cultures and countries"
     }
   ]
 }
