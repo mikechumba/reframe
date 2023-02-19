@@ -17,8 +17,6 @@ const poppins = Poppins({
 })
 
 export default function Home({ organizations }) {
-
-  console.log('::', organizations);
   return (
     <>
       <Head>
