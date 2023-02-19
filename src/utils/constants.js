@@ -1,0 +1,1 @@
+export const sortingMethods = ['Organization', 'Region', 'Funds Raised'];
