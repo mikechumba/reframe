@@ -3,22 +3,26 @@ import NavBar from '@/layout/NavBar'
 import { getOrganizations } from '@/utils/dataService'
 import OrganizationList from '@/layout/OrganizationList'
 import { hiphenate } from '@/utils'
+import ProfileHeader from '@/layout/ProfileHeader'
+import StatsBar from '@/layout/StatsBar'
+import AboutSection from '@/layout/AboutSection'
 
-export default function Home({ organizations }) {
+export default function Home({ organization }) {
   return (
     <>
       <Head>
-        <title>Reframe</title>
+        <title>{organization?.name}</title>
         <meta name="description" content="Easily find organizations making an impact" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className="banner">
         <NavBar />
-        <h1 className="visually-hidden">Reframe</h1>
+        <ProfileHeader org={organization} />
       </header>
       <main className="main">
-        <OrganizationList organizations={organizations} />
+        <StatsBar org={organization} />
+        <AboutSection org={organization}  />
       </main>
       <footer></footer>
     </>
@@ -27,15 +31,16 @@ export default function Home({ organizations }) {
 
 export async function getStaticPaths() {
   const res = await getOrganizations();
-  const paths = res.organizations.map(({ name }) => ({ params: { name: hiphenate(name) } }))
-  console.log('::', paths)
+  const paths = res.organizations.map(({ name }) => ({ params: { name: hiphenate(name)  } }))
   return { paths, fallback: false }
 }
 
-export async function getStaticProps() {
+export async function getStaticProps(ctx) {
+  const { name } = ctx.params;
   const res = await getOrganizations();
+  const org = res.organizations.find(org => hiphenate(org.name) === name);
 
-  return { props: { organizations: res.organizations } }
+  return { props: { organization: org } }
 }
 
 
