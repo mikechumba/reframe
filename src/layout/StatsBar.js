@@ -2,7 +2,7 @@ import { formatAmount } from "@/utils";
 
 const StatsBar = ({ org }) => {
   return (
-    <section className="stats">
+    <section className="stats container">
       <p className="stat-item">
         <span>{formatAmount(org?.total_funds)}</span>
         Raised

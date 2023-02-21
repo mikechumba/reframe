@@ -2,9 +2,6 @@
 @use "./utilities" as *;
 @use "./tools";
 
-.banner, .main {
-  
-}
 
 %page-margins {
   padding: spacing(1) spacing(2);
@@ -27,14 +24,22 @@
 }
 
 .btn {
-  padding: spacing(1) padding(3);
-  padding-bottom: 0;
+  padding: spacing(1) spacing(3);
   border-radius: 4px;
+  font-family: var(--ff-poppins);
+  cursor: pointer;
   &-primary {
     background: var(--brand-secondary);
     &:hover {
-      color: var(--brand-secondary);
-      background: var(--brand-primary);
+      background: var(--gray-200);
+    }
+  }
+  &-outline {
+    background: transparent;
+    border: 1px solid var(--brand-secondary);
+    &:hover {
+      background: var(--gray-200);
+      border: 1px solid var(--gray-200);
     }
   }
 }
@@ -165,17 +170,18 @@
       object-fit: contain;
     }
   }
-  .region {
-    text-transform: uppercase;
-    color: var(--gray-700);
-    letter-spacing: 2px;
-    font-weight: 500;
-  }
-
   h2 {
     font-family: var(--ff-space-grotesk);
   }
 }
+
+.region {
+  text-transform: uppercase;
+  color: var(--gray-700);
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
 
 .card-content {
   display: grid;
@@ -217,4 +223,67 @@
     border-radius: 4px;
     font-weight: 500;
   }
+}
+
+
+
+.profile-header {
+  @extend %page-margins;
+  background: var(--gray-100);
+  padding-top: spacing(4);
+  padding-bottom: spacing(4);
+  border-bottom: 1px solid var(--gray-200);
+  @include tools.breakpoint('sm', 'down') {
+    text-align: center;
+  }
+  @include tools.breakpoint('sm') {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  .right, .details {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: spacing(1);
+  }
+
+  .right {
+    @include tools.breakpoint('sm') {
+      flex-flow: row wrap;
+      gap: spacing(3)
+    }
+  }
+
+  .details {
+    @include tools.breakpoint('sm') {
+      align-items: flex-start;
+    }
+  }
+
+  .left {
+    display: flex;
+    margin-top: spacing(4);
+    flex-flow: row wrap;
+    gap: spacing(2);
+    justify-content: center;
+  }
+
+  .avatar {
+    max-width: 6rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 4px;
+    img {
+      // width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.container {
+  @extend %page-margins;
 }

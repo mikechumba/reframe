@@ -107,6 +107,12 @@ $directions: (
   &-row {
     flex-flow: row wrap;
   }
+  &-sm-row {
+    flex-flow: column wrap;
+    @include tools.breakpoint('sm') {
+      flex-flow: row wrap;
+    }
+  }
   &-column {
     flex-flow: column wrap;
   }
