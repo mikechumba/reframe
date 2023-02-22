@@ -348,24 +348,14 @@
   display: grid;
   row-gap: spacing(2);
   @include tools.breakpoint('md') {
-    grid-template-areas: 
-      'about gallery'
-      'list gallery';
-    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: spacing(6);
+    grid-auto-rows: auto;
   }
 
-  .gallery {
-    grid-area: 'gallery';
-  }
-
-  .about {
-    grid-area: 'about';
-    height: auto;
-  }
-
-  .list {
-    grid-area: list;
+  .text-area {
+    display: grid;
+    gap: spacing(2);
   }
 }
 

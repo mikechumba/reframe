@@ -4,7 +4,7 @@ const ListSection = ({ org }) => {
   return (
     <section className="list" aria-labelledby="list-section-title">
       <h2 id="list-section-title" className="h2-small">
-        Partners <span className="visually-hidden">{org?.name}</span>
+        Partners <span className="visually-hidden">of {org?.name}</span>
       </h2>
       <div className="mt-2 partners">
         <h3>Current</h3>

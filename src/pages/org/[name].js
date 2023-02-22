@@ -24,11 +24,15 @@ export default function Home({ organization }) {
       </header>
       <main className="main">
         <StatsBar org={organization} />
-        <div className="container profile-grid">
-          <AboutSection org={organization}  />
-          <Gallery images={organization?.gallery} />
-          <ListSection org={organization} />
-        </div>
+        <article className="container profile-grid">
+          <div className="text-area">
+            <AboutSection org={organization}  />
+            <ListSection org={organization} />
+          </div>
+          <div className="sidebar">
+            <Gallery images={organization?.gallery} />
+          </div>
+        </article>
       </main>
       <footer></footer>
     </>
