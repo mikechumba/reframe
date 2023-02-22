@@ -8,6 +8,7 @@ import StatsBar from '@/layout/StatsBar'
 import AboutSection from '@/layout/AboutSection'
 import Gallery from '@/layout/Gallery'
 import ListSection from '@/layout/ListSection'
+import Footer from '@/layout/Footer'
 
 export default function Home({ organization }) {
   return (
@@ -34,7 +35,7 @@ export default function Home({ organization }) {
           </div>
         </article>
       </main>
-      <footer></footer>
+      <Footer />
     </>
   )
 }
