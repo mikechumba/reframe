@@ -18,35 +18,46 @@ const OrganizationList = ({ organizations }) => {
       categoryData.push(...(org.tags || []));
     }
     setCategories(Array.from(new Set(categoryData)));
-    setRegions(regionData);
+    setRegions(Array.from(new Set(regionData)));
   };
 
-  const sortOrganizatins = (sortBy) => {
-    const sorted = filteredOrgs.sort((a, b) => {
+  const sortOrganizations = (sortBy, orgs) => {
+    const sorted = orgs.sort((a, b) => {
       const key =
         sortBy === "Organization"
           ? "name"
           : sortBy === "Region"
           ? "country"
           : "total_funds";
-      return a[key] - b[key];
+      return a[key].localeCompare(b[key]);
     });
     setFilteredOrgs(sorted);
   };
 
-  const categoryFilter = (category) => {
-    const filtered = organizations.filter((org) => org.tags.include(category));
-    setFilteredOrgs(filtered);
-  };
+  const filterOrganizations = (filterValues) => {
+    const { category, region, sortBy, searchParam } = filterValues;
+    const filtered = organizations.filter((org) => {
+      const byCategory = category ? org.tags.includes(category) : true;
+      const byRegion = region ? org.country === region : true;
+      const bySearch = searchParam ? org.name.toLowerCase().includes(searchParam.toLowerCase()) : true
+      return byCategory && byRegion && bySearch
+    });
 
-  const regionFilter = (region) => {
-    const filtered = organizations.filter((org) => org.country === region);
-    setFilteredOrgs(filtered);
+    if (sortBy) {
+      sortOrganizations(sortBy, filtered)
+    } else {
+      setFilteredOrgs(filtered);
+    }
+    
   };
 
   useEffect(() => {
     getFilteringData();
   }, [organizations]);
+
+  useEffect(() => {
+    filterOrganizations(filterValues)
+  }, [filterValues]);
 
   return (
     <section aria-label="Organization List">
@@ -54,11 +65,10 @@ const OrganizationList = ({ organizations }) => {
         categories={categories}
         regions={regions}
         sortMethods={sortingMethods}
-        sortOrgs={sortOrganizatins}
         updateFilterValues={setFilterValues}
       />
       <ol className="mt-4 organization-list">
-        {organizations.map((org, i) => (
+        {filteredOrgs.map((org, i) => (
           <li key={`org-${i + 1}`}>
             <Card org={org} />
           </li>
