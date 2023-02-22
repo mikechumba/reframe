@@ -2,7 +2,7 @@ import "@/styles/globals.scss";
 import { Space_Grotesk, Poppins } from "@next/font/google";
 
 const spaceGrotesk = Space_Grotesk({
-  weight: ["400", "700"],
+  weight: ['variable'],
   subsets: ["latin"],
   variable: "--ff-space-grotesk",
 });
