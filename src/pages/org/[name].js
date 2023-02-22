@@ -23,7 +23,7 @@ export default function Home({ organization }) {
       </header>
       <main className="main">
         <StatsBar org={organization} />
-        <div className="profile-grid">
+        <div className="container profile-grid">
         <AboutSection org={organization}  />
         <Gallery images={organization?.gallery} />
         </div>
