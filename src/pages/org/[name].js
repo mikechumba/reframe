@@ -6,6 +6,7 @@ import { hiphenate } from '@/utils'
 import ProfileHeader from '@/layout/ProfileHeader'
 import StatsBar from '@/layout/StatsBar'
 import AboutSection from '@/layout/AboutSection'
+import Gallery from '@/layout/Gallery'
 
 export default function Home({ organization }) {
   return (
@@ -22,7 +23,10 @@ export default function Home({ organization }) {
       </header>
       <main className="main">
         <StatsBar org={organization} />
+        <div className="profile-grid">
         <AboutSection org={organization}  />
+        <Gallery images={organization?.gallery} />
+        </div>
       </main>
       <footer></footer>
     </>
