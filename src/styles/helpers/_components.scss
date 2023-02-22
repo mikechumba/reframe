@@ -163,8 +163,11 @@
 }
 
 .card {
+  margin: spacing(1);
   border: 1px solid var(--gray-200);
   border-radius: 4px;
+  position: relative;
+  cursor: pointer;
   &-image {
     padding: spacing(2);
     padding-bottom: 0;
@@ -176,6 +179,19 @@
   }
   h2 {
     font-family: var(--ff-space-grotesk);
+  }
+
+  &:focus-within, &:focus {
+    outline: 2px solid var(--brand-primary);
+    margin: 0;
+  }
+
+  &:hover {
+    margin: 0;
+  }
+
+  a:focus {
+    outline: none;
   }
 }
 
@@ -216,6 +232,10 @@
         border-radius: 4px;
       }
     }
+  }
+
+  a::after {
+    content: '';
   }
 }
 

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import NavBar from '@/layout/NavBar'
 import { getOrganizations } from '@/utils/dataService'
 import OrganizationList from '@/layout/OrganizationList'
+import Footer from '@/layout/Footer'
 
 export default function Home({ organizations }) {
   return (
