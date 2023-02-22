@@ -19,7 +19,7 @@ export default function Home({ organizations }) {
       <main className="main">
         <OrganizationList organizations={organizations} />
       </main>
-      <footer></footer>
+      <Footer />
     </>
   )
 }
