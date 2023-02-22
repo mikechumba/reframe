@@ -346,8 +346,11 @@
 
 .profile-grid {
   display: grid;
+  row-gap: spacing(2);
   @include tools.breakpoint('md') {
-    grid-template-areas: 'about gallery';
+    grid-template-areas: 
+      'about gallery'
+      'list gallery';
     grid-auto-columns: 1fr;
     column-gap: spacing(6);
   }
@@ -357,7 +360,12 @@
   }
 
   .about {
-    grid-area: 'about'
+    grid-area: 'about';
+    height: auto;
+  }
+
+  .list {
+    grid-area: list;
   }
 }
 
@@ -377,5 +385,24 @@
       width: 100%;
       object-fit: cover;
     }
+  }
+}
+
+.partners {
+  h3 {
+    font-size: var(--fz-sm);
+    font-weight: 700;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: spacing(1);
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: spacing(1);
   }
 }

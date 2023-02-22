@@ -20,7 +20,7 @@
         "https://images.unsplash.com/photo-1608686207856-001b95cf60ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80",
         "https://images.unsplash.com/photo-1644726270363-e746b37b482b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGNoYXJpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
       ],
-      "partner": {
+      "partners": {
         "current": ["Same Skies", ""],
         "previous": ["Individuals"],
         "network_affiliations": ["UPH University", "Jesuit Refugee Service (JRS)" , "Same Skies", "Beyond The Fabric"]
@@ -32,7 +32,7 @@
     {
       "id": "2",
       "name": "YIDA",
-      "verified": "true",
+      "verified": "false",
       "logo": "",
       "avatar": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "tags": ["Education", "Livelihoods", "Basic Needs"],
@@ -43,7 +43,7 @@
       "target_amount": "5000",
       "team": [{ "avatar": "", "name": "John Doe", "role": "Board Member" }],
       "gallery": [""],
-      "partner": {
+      "partners": {
         "current": ["COHERE", "Master Card foundation", "ALA4 Education", "Change For Humanity", "Anonymous"],
         "previous": ["UNHCR", "COTEA", "Anzisha/ALA", "Global youth empowerment fund", "Right to play/UNICEF"],
         "network_affiliations": ["YUNUS and YOUTH", "Anzisha fellow"]
@@ -66,7 +66,7 @@
       "target_amount": "7641",
       "team": [{ "avatar": "", "name": "John Doe", "role": "Board Member" }],
       "gallery": [""],
-      "partner": {
+      "partners": {
         "current": ["Xavier Project", "Amala Foundation", "Jangala", "LERRN"],
         "previous": ["Open Society Foundation (OSF)"],
         "network_affiliations": ["Local Engagement Refugee Research Network (LERRN)"]
@@ -89,7 +89,7 @@
       "target_amount": "45000",
       "team": [{ "avatar": "", "name": "John Doe", "role": "Board Member" }],
       "gallery": [""],
-      "partner": {
+      "partners": {
         "current": ["Elementary Child Care of Australia", "Permaculture for Sustainable Communities", "Seeds for Peace", "Swiss contact", "AMALA", "Tree for All"],
         "previous": ["REBANK", "Evergreen Coin", "Sfaira Foundation"],
         "network_affiliations": ["Kakuma Refugee Initiative Network (KRIN)", "Permaculture for Sustainable Communities"]
@@ -112,7 +112,7 @@
       "target_amount": "0",
       "team": [{ "avatar": "", "name": "John Doe", "role": "Board Member" }],
       "gallery": [""],
-      "partner": {
+      "partners": {
         "current": ["Google", "Coursera", "Buffalo Grid", "YINNOH", "Refugee Innovation Center", "Antura and the Letters", "Step Up One"],
         "previous": [],
         "network_affiliations": ["Techfugees", "ITU", "Google For Startups"]
@@ -135,14 +135,14 @@
       "target_amount": "16000",
       "team": [{ "avatar": "", "name": "John Doe", "role": "Board Member" }],
       "gallery": [""],
-      "partner": {
+      "partners": {
         "current": ["HIAS KENYA", "IRC - International Rescue Committee", "JRS - Jesuit Refugee Services", "Refuge Point Kenya"],
         "previous": ["HIAS Kenya"],
         "network_affiliations": ["UMOJA REFUGEE", "BORTOPRA GROUP", "OAK SOLUTIONS"]
       },
       "operating_locations": ["Nairobi Metropolitan Area"],
       "annual_beneficiary_reach": "670",
-      "beneficiaries": "Based in Kitengela our beneficiaries are 40% Congolese, 25% Burundians, 15% Ethiopians and we also have 20% from the host Maasai Community being Kajiado is a marginalised County. To date we have 2,000 beneficiaries we have had contact with(Medical Outreach, Mask and Sanitizer Distribution, Psychosocial Support and Business grants in partnership with NGOs"
+      "beneficiaries": "Based in Kitengela our beneficiaries are 40% Congolese, 25% Burundians, 15% Ethiopians and we also have 20% from the host Maasai Community being Kajiado is a marginalised County. To date we have 2,000 beneficiaries we have had contact with(Medical Outreach, Mask and Sanitizer Distribution, Psychosocial Support and Business grants in partnersship with NGOs"
     }
   ]
 }

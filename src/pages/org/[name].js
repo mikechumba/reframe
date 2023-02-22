@@ -7,6 +7,7 @@ import ProfileHeader from '@/layout/ProfileHeader'
 import StatsBar from '@/layout/StatsBar'
 import AboutSection from '@/layout/AboutSection'
 import Gallery from '@/layout/Gallery'
+import ListSection from '@/layout/ListSection'
 
 export default function Home({ organization }) {
   return (
@@ -24,8 +25,9 @@ export default function Home({ organization }) {
       <main className="main">
         <StatsBar org={organization} />
         <div className="container profile-grid">
-        <AboutSection org={organization}  />
-        <Gallery images={organization?.gallery} />
+          <AboutSection org={organization}  />
+          <Gallery images={organization?.gallery} />
+          <ListSection org={organization} />
         </div>
       </main>
       <footer></footer>
