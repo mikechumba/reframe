@@ -1,6 +1,7 @@
 import EmailIcon from "@/assets/EmailIcon";
 import Logo from "@/assets/Logo";
-import { footerLinks, socialLinks } from "@/utils/constants";
+import { charityReg, footerLinks, socialLinks } from "@/utils/constants";
+import { Fragment } from "react";
 
 const Footer = () => {
   return (
@@ -9,8 +10,9 @@ const Footer = () => {
         <div className="right">
           <div className="logo mb-2">
             <Logo />
+            
           </div>
-          <div className="links mb-3">
+          <div className="links mt-1 mb-3">
             <nav aria-label="Secondary Navigation">
               <ul>
                 {footerLinks.map((link, i) => (
@@ -37,10 +39,26 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <div className="social-links mt-4">
+      
+      <div className="registration-details">
+        <p>
+          Cohere, Registered in. England and Wales, Registered Address: Dean
+          Farm, Oaksey, Malmesbury, Wilts, SN16 9SB. <br />
+        </p>
+        <ul className="flex flex-row align-item-center justify-content-center fg-2">
+          {charityReg.map((reg, i) => (
+            <Fragment key={`reg-${i+1}`}>
+              <li >{reg}</li>
+              {i + 1 < charityReg.length && <hr />}
+            </Fragment>
+          ))}
+        </ul>
+        <p></p>
+      </div>
+      <div className="social-links mt-0 mb-4">
         <ul>
           {socialLinks.map((link, i) => (
-            <li>
+            <li key={`social-${i+1}`}>
               <a href={link.url}>
                 {link.icon}{" "}
                 <span className="visually-hidden">{link.label}</span>
@@ -49,15 +67,6 @@ const Footer = () => {
           ))}
         </ul>
       </div>
-      <div className="registration-details">
-        <p>
-          Cohere, Registered in. England and Wales, Registered Address: Dean
-          Farm, Oaksey, Malmesbury, Wilts, SN16 9SB. <br /> UK Charity No:
-          1153638 / Uganda NGO cert. INDR10385305NB / Kenya NGO cert.
-          OP.218/051/12-0511/8654.
-        </p>
-      </div>
-      <div className="social-links"></div>
     </footer>
   );
 };

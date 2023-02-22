@@ -50,3 +50,9 @@ export const socialLinks = [
     label: 'Facebook',
   }
 ];
+
+export const charityReg = [
+  'UK Charity No: 1153638 Uganda NGO cert. INDR10385305NB',
+  'Uganda NGO cert. INDR10385305NB',
+  'Kenya NGO cert.  OP.218/051/12-0511/8654'
+];

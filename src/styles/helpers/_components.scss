@@ -80,6 +80,11 @@
       gap: spacing(2);
     }
   }
+
+  a:hover {
+    font-weight: 500;
+    color: var(--brand-secondary);
+  }
 }
 
 .ham {
@@ -249,8 +254,6 @@
     font-weight: 500;
   }
 }
-
-
 
 .profile-header {
   @extend %page-margins;
@@ -450,6 +453,10 @@ footer {
     fill: var(--gray-100);
     width: 1rem;
   }
+
+  a:hover {
+    color: var(--brand-secondary);
+  }
 }
 
 .company-details {
@@ -474,7 +481,7 @@ footer {
 .registration-details {
   text-align: center;
   padding: spacing(4) 0 spacing(6);
-  p {
+  p, li {
     font-size: var(--fz-xxs);
   }
 }
