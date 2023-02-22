@@ -1,14 +1,10 @@
 import EmailIcon from "@/assets/EmailIcon";
 import Logo from "@/assets/Logo";
-import FacebookIcon from "@/assets/social/FacebookIcon";
-import InstagramIcon from "@/assets/social/InstagramIcon";
-import LinkedInIcon from "@/assets/social/LinkedInIcon";
-import TwitterIcon from "@/assets/social/TwitterIcon";
 import { footerLinks, socialLinks } from "@/utils/constants";
 
 const Footer = () => {
   return (
-    <footer className="container mt-2">
+    <footer className="container mt-9">
       <div className="company-details mb-4">
         <div className="right">
           <div className="logo mb-2">
