@@ -14,7 +14,7 @@ const ProfileHeader = ({ org }) => {
           <p className="region">{org?.country}</p>
           <ul className="tags flex flex-row fg-2">
             {org?.tags.map((tag, i) => (
-              <li className="tag-item">{tag}</li>
+              <li className="tag-item" key={`tag-${i+1}`}>{tag}</li>
             ))}
           </ul>
         </div>
