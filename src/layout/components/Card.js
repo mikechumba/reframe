@@ -34,6 +34,7 @@ const Card = ({ org }) => {
             ref={link}
             href={`org/${hiphenate(org.name)}`}
             target="_blank"
+            rel="noreferrer"
           >
             {org.name}
           </a>
