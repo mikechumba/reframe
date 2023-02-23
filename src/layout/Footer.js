@@ -45,12 +45,9 @@ const Footer = () => {
           Cohere, Registered in. England and Wales, Registered Address: Dean
           Farm, Oaksey, Malmesbury, Wilts, SN16 9SB. <br />
         </p>
-        <ul className="flex flex-row align-item-center justify-content-center fg-2">
+        <ul className="flex flex-row align-item-center justify-content-center fg-1">
           {charityReg.map((reg, i) => (
-            <Fragment key={`reg-${i+1}`}>
-              <li >{reg}</li>
-              {i + 1 < charityReg.length && <hr />}
-            </Fragment>
+              <li key={`reg-${i+1}`}>{reg}</li>
           ))}
         </ul>
         <p></p>
