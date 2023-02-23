@@ -31,8 +31,8 @@ const Card = ({ org }) => {
           <span>{formatAmount(org.total_funds)}</span>{' '}Raised
         </p>
         <div className="progress-bar">
-          <label className="visually-hidden" htmlFor="fundraising-progress">Fundraising Progress</label>
-          <progress className="progress" id="fundraising-progress" max={org.target_amount} value={org.total_funds}></progress>
+          <label className="visually-hidden" htmlFor={`fundraising-progress-${org.id}`}>Fundraising Progress</label>
+          <progress className="progress" id={`fundraising-progress-${org.id}`} max={org.target_amount} value={org.total_funds}></progress>
         </div>
       </div>
     </div>
