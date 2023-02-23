@@ -1,5 +1,6 @@
-import Logo from "@/assets/Logo";
 import { useRef } from "react";
+import Logo from "@/assets/Logo";
+import Link from 'next/link';
 
 const NavBar = () => {
   const btnRef = useRef();
@@ -18,10 +19,10 @@ const NavBar = () => {
   return (
     <nav className="main-nav flex flex-row align-items-center justify-content-between">
       <div className="logo">
-        <a href="/">
+        <Link href="/">
           <Logo />
           <span className="visually-hidden">Reframe Home</span>
-        </a>
+        </Link>
       </div>
       <button className="ham" onClick={toggleMenu} ref={btnRef} aria-label="Menu" aria-expanded="false" aria-controls="menu">
         <div className="ham-icon">
