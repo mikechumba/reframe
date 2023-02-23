@@ -8,8 +8,8 @@ const ProfileHeader = ({ org }) => {
           <img src={org?.avatar} role="presentation" alt="" />
         </div>
         <div className="details">
-          <h1 className="header-2">
-            {org?.name} <span>{org?.verified === "true" && <CheckMark />}</span>
+          <h1 className="header-2 flex flex-row align-items-center fg-2">
+            {org?.name} <span className="checkmark checkmark-sm">{org?.verified === "true" && <CheckMark />}</span>
           </h1>
           <p className="region">{org?.country}</p>
           <ul className="tags flex flex-row fg-2">
