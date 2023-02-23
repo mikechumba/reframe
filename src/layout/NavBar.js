@@ -18,7 +18,10 @@ const NavBar = () => {
   return (
     <nav className="main-nav flex flex-row align-items-center justify-content-between">
       <div className="logo">
-        <Logo />
+        <a href="/">
+          <Logo />
+          <span className="visually-hidden">Reframe Home</span>
+        </a>
       </div>
       <button className="ham" onClick={toggleMenu} ref={btnRef} aria-label="Menu" aria-expanded="false" aria-controls="menu">
         <div className="ham-icon">
