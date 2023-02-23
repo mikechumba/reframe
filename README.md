@@ -1,38 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Reframe Prototype
 
-## Getting Started
+This is an attempt at a redesign of [Reframe](https://reframe.network/).
 
-First, run the development server:
+## Project Status
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+This is a work in progress. I've only built the organization list page and the organization profile. Some of the pending work include 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Polishing the design of the profile page.
+- Image optimization
+- Extra pages including a landing page
+- Sign In Page
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Images
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+![Screenshot of Reframe's homepage](https://ik.imagekit.io/bsvzrpqaj/Github/Pasted_image_20230223184811_RKp3Nwyf2.png?ik-sdk-version=javascript-1.4.3&updatedAt=1677168513218)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+![Screenshot of Reframe's organization profile page](https://ik.imagekit.io/bsvzrpqaj/Github/Pasted_image_20230223184811_RKp3Nwyf2.png?ik-sdk-version=javascript-1.4.3&updatedAt=1677168513218)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Tools and Setup
 
-## Learn More
+Since I approached is a MVP creation, I just created a static site using Next.js. To run the project locally, follow the steps below:
 
-To learn more about Next.js, take a look at the following resources:
+- Clone the project `git clone [repo-URL]`
+- I used yarn zero installs as the package manager, so make sure you have *Node* and *Yarn* installed then:
+	- Run `yarn install`
+	- Then start the server by running `yarn dev`
+	- To build the project, use `yarn build`, then consequently, `yarn start` to run the production build.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technologies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Next.js
+- SCSS
 
-## Deploy on Vercel
+## Afterthought
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Sometimes I like to think I've mastered accessibility but this project and many other remind me how tempting it is to skip best practises. 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+One of the newer things I learned was accessibility of card links. Thanks to [Heydon Pickering's Cards](https://inclusive-components.design/cards/) and [How to build accessible cards–block links - Nomensa](https://www.nomensa.com/blog/how-build-accessible-cards-block-links)
