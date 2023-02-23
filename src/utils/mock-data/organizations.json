@@ -34,7 +34,7 @@
       "name": "YIDA",
       "verified": "false",
       "logo": "",
-      "avatar": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "avatar": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNoYXJpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
       "tags": ["Education", "Livelihoods", "Basic Needs"],
       "about": "YIDA (Youth Initiative for Development in Africa) is a youth-led, Community Based Organization formed by the youth refugees in Kyaka II refugee camp to provide Quality –holistic Integrated Early childhood development (IECD) services, to create an enabling environment for improved learning outcomes among children aged 3-8 years in Kyaka II and improve livelihoods through financial inclusion and literacy to Create jobs in the refugees and non-refugees, to live a sustainable life.",
       "website": "https://www.youthinitiativefda.org/",
@@ -42,7 +42,10 @@
       "total_funds": "500",
       "target_amount": "5000",
       "team": [{ "avatar": "", "name": "John Doe", "role": "Board Member" }],
-      "gallery": [""],
+      "gallery": [
+        "https://images.unsplash.com/photo-1473649085228-583485e6e4d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fGNoYXJpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1524341661047-3a38ae8987f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      ],
       "partners": {
         "current": ["COHERE", "Master Card foundation", "ALA4 Education", "Change For Humanity", "Anonymous"],
         "previous": ["UNHCR", "COTEA", "Anzisha/ALA", "Global youth empowerment fund", "Right to play/UNICEF"],
@@ -57,15 +60,19 @@
       "name": "URISE4Africa",
       "verified": "true",
       "logo": "",
-      "avatar": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "avatar": "https://images.unsplash.com/photo-1515658323406-25d61c141a6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG5nbyUyMGFmcmljYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       "tags": ["Technology", "Gender"],
       "about": "URISE Initiative for Africa was established in October 2016 and was formally registered by the Turkana County Ministry of Labor, Social Security and Services in February 2017 with the vision to empower youth with transformative and innovative skills that they can use to be self-reliant and to serve as good ambassadors of Peace in their respective communities. URISE Initiative for Africa is a refugee-led organization that guides young refugees to find meaning through life skills, social and economic empowerment. We use technology to train young refugees with relevant ICT skills that they can apply in real-life situations to build their social and economic value. We merge the use of technology and peace education to instill the spirit of peace-building and peace-making to young refugee generation. Besides, we develop skills in areas such as leadership, peace building and social entrepreneurship to youths from various communities for peaceful coexistence between and among refugees communities.",
       "website": "",
-      "country": "Indonesia",
+      "country": "Kenya",
       "total_funds": "3000",
       "target_amount": "7641",
       "team": [{ "avatar": "", "name": "John Doe", "role": "Board Member" }],
-      "gallery": [""],
+      "gallery": [
+        "https://images.unsplash.com/photo-1515658323406-25d61c141a6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG5nbyUyMGFmcmljYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1471771450139-6bfdb4b2609a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG5nbyUyMGFmcmljYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVmdWdlZXMlMjB0ZWNobm9sb2d5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+      ],
       "partners": {
         "current": ["Xavier Project", "Amala Foundation", "Jangala", "LERRN"],
         "previous": ["Open Society Foundation (OSF)"],
@@ -80,7 +87,7 @@
       "name": "Faulu Productions",
       "verified": "true",
       "logo": "",
-      "avatar": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "avatar": "https://images.unsplash.com/photo-1473605768212-7e1f2c756179?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YWdyaWN1bHR1cmUlMjBhZnJpY2F8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
       "tags": ["Education", "Poverty", "Refugees"],
       "about": "- FAULU PRODUCTIONS was founded in 2015 June and registered two years later as a non-profit, non-political, and a non-religious community-based organization Kenya by the Ministry of East African Community, Labor and Social Protection with the reg. CO/TRKW/CDO/HC 2434. - Our mission is to promote youth talents, to create a safe, sustainable living that enables social change, and education for marginalized communities; and Empowerment to vulnerable. We run three main programs: 1. Agriculture and Permaculture, here we promote agribusiness and food security, free seeds and agricultural equipment, supports to community farms, as well free training to farmers and gardeners. 2. Education: we run both formal and non-formal curriculum whereby we have a free preschool, primary education remedial classes as well as high school compensatory curriculum done online through the AMALA platform from UK. 3. Women Empowerment (Livelihoods): We advocate on GBV cases and mobilize the community on how such inhuman exploitation should take it end. We offer microcredits to women and offer them with entrepreneurship skill. Finally, we also offer two free skills for life that is Soap making and Tailoring to youths and women as a means to supports them for self-reliance.",
       "website": "https://web.facebook.com/groups/1869798563253115/?_rdc=1&_rdr",
@@ -88,7 +95,11 @@
       "total_funds": "7000",
       "target_amount": "45000",
       "team": [{ "avatar": "", "name": "John Doe", "role": "Board Member" }],
-      "gallery": [""],
+      "gallery": [
+        "https://images.unsplash.com/photo-1509110646989-7ca4308edb3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YWdyaWN1bHR1cmUlMjBhZnJpY2F8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1599997842102-744084270ad2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGFncmljdWx0dXJlJTIwYWZyaWNhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1473605768212-7e1f2c756179?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YWdyaWN1bHR1cmUlMjBhZnJpY2F8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+      ],
       "partners": {
         "current": ["Elementary Child Care of Australia", "Permaculture for Sustainable Communities", "Seeds for Peace", "Swiss contact", "AMALA", "Tree for All"],
         "previous": ["REBANK", "Evergreen Coin", "Sfaira Foundation"],
@@ -103,7 +114,7 @@
       "name": "Techfugees Uganda",
       "verified": "true",
       "logo": "",
-      "avatar": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "avatar": "https://images.unsplash.com/photo-1612353312154-a7aae0a0a998?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fHVnYW5kYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       "tags": ["Refugees", "Technology"],
       "about": "Techfugees Uganda started in March 2021. According the UNHCR, Uganda hosts about 1.4 million refugees, which makes it the first African host country for refugees, with 60% being children. Forced displacement continues to grow with arrivals mainly from the Democratic Republic of Congo (DRC), South Sudan and Burundi. The goal of Techfugees Uganda is to connect refugees to the wider socio-economic system and restore their dignity so that they become agents of their own lives as well as their host communities",
       "website": "https://techfugees.com/techfugees-uganda/",
@@ -111,7 +122,11 @@
       "total_funds": "0",
       "target_amount": "0",
       "team": [{ "avatar": "", "name": "John Doe", "role": "Board Member" }],
-      "gallery": [""],
+      "gallery": [
+        "https://images.unsplash.com/photo-1594142322485-9a499ed02e1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fHVnYW5kYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1588653948445-eea74875ca86?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTd8fHVnYW5kYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1582848155369-d5f409351a42?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fHVnYW5kYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+      ],
       "partners": {
         "current": ["Google", "Coursera", "Buffalo Grid", "YINNOH", "Refugee Innovation Center", "Antura and the Letters", "Step Up One"],
         "previous": [],
@@ -126,7 +141,7 @@
       "name": "Oak Solutions",
       "verified": "true",
       "logo": "",
-      "avatar": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "avatar": "https://images.unsplash.com/photo-1509099863731-ef4bff19e808?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YWZyaWNhbiUyMHlvdXRofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
       "tags": ["Disability", "Technology"],
       "about": "Our Story Oak Solutions from the Oak; considered a cosmic storehouse of wisdom embodied in its towering strength is one of the most loved trees in the world being a symbol of strength, morale, resistance and knowledge. Oak Solutions Centre main objective is the Inclusive development agenda. Oak Solutions Centre was founded in 2018 by friends from different nationalities: - Kenyans, Congolese, Ethiopians, Burundians and South Sudanese seeking inclusive development through economic inclusion and self-reliance. Driven by the conviction that all people, regardless of where they live, have the right to a dignified and productive livelihood which enables them to live in peace, security, justice and dignity. Guided by our Mission, we work with compassion and vigor through our engagements to empower the vulnerable persons, refugees, youth and women on livelihood and self-reliance. One of the few organizations practicing multicultural collaboration with members from different cultural backgrounds and orientations. Oak Solutions Centre envisions a world where the vulnerable persons (refugees, women and youth) have the opportunity to earn a living and be self-reliant; being a quality of depending on yourself and your abilities to get through the challenges of life on the back of your own resourcefulness. The vulnerable persons have their dignity and hope reaffirmed when their-livelihoods; the capabilities, assets and activities required for them to earn money and secure a means of living is secure. This being one of the most effective ways to rebuild lives and alleviate poverty. Their desire for self-reliance challenges the common preconception that they are a burden on host communities. By fulfilling their potential and sharing their talents, refugees, women and the youth fully contribute to the growth, strength, and stability of communities. The Oak Solutions Centre goal is to build resilient refugees, youth, women and host communities through holistic program approaches that lead to economic independence and creative economic recovery activities, utilizing gender transformative approaches to create positive change for women and their communities. Our Programs; Community Development, Economic Recovery, Mrembo Effect, Health and Sanitation. Inspired by Love our work expresses the commitment to promote formation of grassroots groups of women, refugees and the youth with the aim of increasing their self-reliance to achieve full participation in their communities, break through barriers and forge their own path to a healthier future and attain equal rights as we alleviate poverty through guiding talents to skills and recognizing gifts as capital. Oak Solutions Centre works with civil society and responsible authorities in Kenya to promote protection of rights and peaceful coexistence. Our advisory board, program staff and volunteers make an invaluable difference in integration of our activities.",
       "website": "http://oaksolutionscentre.org/",
@@ -134,7 +149,10 @@
       "total_funds": "1000",
       "target_amount": "16000",
       "team": [{ "avatar": "", "name": "John Doe", "role": "Board Member" }],
-      "gallery": [""],
+      "gallery": [
+        "https://images.unsplash.com/photo-1506370612293-360919ece3d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGFmcmljYW4lMjB5b3V0aHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njl8fGFmcmljYW4lMjBjaGFyaXR5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+      ],
       "partners": {
         "current": ["HIAS KENYA", "IRC - International Rescue Committee", "JRS - Jesuit Refugee Services", "Refuge Point Kenya"],
         "previous": ["HIAS Kenya"],
