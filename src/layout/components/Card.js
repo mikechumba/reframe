@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import Image from "next/image";
 import { formatAmount, hiphenate } from "@/utils";
+import CheckMark from "@/assets/CheckMark";
 
 const Card = ({ org }) => {
   const link = useRef();
@@ -27,7 +28,7 @@ const Card = ({ org }) => {
       </div>
       <div className="card-content mt-1">
         <p className="region">{org.country}</p>
-        <h2 className="mt-1">
+        <h2 className="mt-1 flex flex-row align-items-center fg-1">
           <a
             className="h2"
             ref={link}
@@ -36,8 +37,9 @@ const Card = ({ org }) => {
           >
             {org.name}
           </a>
+          <div aria-hidden="true" className="checkmark checkmark-sm">{org?.verified === "true" && <CheckMark />}</div>
         </h2>
-        <ul className="tags flex flex-row fg-2 mt-1">
+        <ul className="tags flex flex-row fg-2 mt-2">
           {org.tags.map((tag, tagId) => (
             <li className="tag-item" key={`tag-${tagId + 1}`}>
               {tag}

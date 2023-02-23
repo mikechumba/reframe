@@ -524,3 +524,14 @@ footer {
 .icon {
   width: 1rem;
 }
+
+.checkmark {
+  display: flex;
+  &-sm {
+    svg {
+      width: var(--fz-xs);
+      height: var(--fz-xs);
+      align-self: center;
+    }
+  }
+}
