@@ -152,10 +152,6 @@
     font-size: 0.875rem;
     border-radius: 4px;
   }
-
-  .search-field {
-
-  }
 }
 
 .organization-list {
@@ -176,15 +172,25 @@
   cursor: pointer;
   &-image {
     padding: spacing(2);
-    padding-bottom: 0;
+    max-height: 240px;
+    overflow: hidden;
+    span {
+      display: flex;
+      border-radius: 4px;
+      overflow: hidden;
+      width: 100%;
+      max-height: 230px;
+      z-index: 1;
+    }
     img {
       width: 100%;
-      border-radius: 4px;
-      object-fit: contain;
+      height: auto;
+      object-fit: cover;
     }
   }
   h2 {
     font-family: var(--ff-space-grotesk);
+    font-size: var(--fz-lg);
   }
 
   &:focus-within, &:focus {
@@ -252,6 +258,7 @@
     background: #D3FBD8;
     padding: 0.25em 0.5em;
     border-radius: 4px;
+    font-size: var(--fz-xs);
     font-weight: 500;
   }
 }
