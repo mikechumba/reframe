@@ -15,7 +15,7 @@ This is a work in progress. I've only built the organization list page and the o
 
 ![Screenshot of Reframe's homepage](https://ik.imagekit.io/bsvzrpqaj/Github/Pasted_image_20230223184811_RKp3Nwyf2.png?ik-sdk-version=javascript-1.4.3&updatedAt=1677168513218)
 
-![Screenshot of Reframe's organization profile page](https://ik.imagekit.io/bsvzrpqaj/Github/Pasted_image_20230223184811_RKp3Nwyf2.png?ik-sdk-version=javascript-1.4.3&updatedAt=1677168513218)
+![Screenshot of Reframe's organization profile page](https://ik.imagekit.io/bsvzrpqaj/Github/Pasted_image_20230223184854_0BRVZCCHh.png?ik-sdk-version=javascript-1.4.3&updatedAt=1677168511939)
 
 ## Tools and Setup
 
