@@ -20,9 +20,9 @@ const ProfileHeader = ({ org }) => {
         </div>
       </div>
       <div className="left">
-        <a href="">
+        {org.website && <a href={org.website} target="_blank" rel="noopener">
           <button className="btn btn-outline">Website</button>
-        </a>
+        </a>}
         <button className="btn btn-primary">Donate</button>
       </div>
     </div>
